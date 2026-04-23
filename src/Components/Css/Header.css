@@ -1,0 +1,115 @@
+.mainHeader {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  .menuHeader {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: rgb(1, 214, 47);
+      font-weight: bold;
+      span {
+        color: rgb(242, 165, 22);
+      }
+    }
+    .midHeader {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .wrapper {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .btn {
+          width: 30%;
+          height: 60%;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+          background-color: rgb(3, 179, 3);
+        }
+        .btn1 {
+          width: 25%;
+          height: 60%;
+          border: none;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+          background-color: transparent;
+        }
+      }
+      .searchBar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .search {
+          width: 90%;
+          height: 60%;
+          border: none;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          background-color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+          padding-left: 10px;
+        }
+        .btn3 {
+          width: 25%;
+          height: 60%;
+          border: none;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+          background-color: rgb(246, 154, 7);
+        }
+      }
+    }
+    .rightHeader {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      .cartLogo {
+        width: 40%;
+        height: 40%;
+        color: #15a215;
+      }
+      .btn2 {
+        width: 50%;
+        height: 60%;
+        border: none;
+        border-radius: 0.5rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        background-color: rgb(246, 154, 7);
+      }
+      .btn4 {
+        width: 40%;
+        height: 60%;
+        border: none;
+        border-radius: 0.5rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        background-color: rgb(25, 200, 9);
+      }
+    }
+  }
+}

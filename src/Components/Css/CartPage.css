@@ -1,0 +1,209 @@
+.wrapper {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .mainCard {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    background-color: #fff;
+    .menuLeft {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      .mainHead {
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        gap: 10px;
+        .cartWrap {
+          display: flex;
+          width: 100%;
+          height: 40%;
+          list-style: none;
+          background-color: rgb(223, 255, 192);
+          align-items: center;
+          justify-content: space-around;
+          font-size: medium;
+        }
+      }
+      .cartFormat {
+        width: 90%;
+        height: 80%;
+        border: solid silver 2px;
+        border-radius: 10px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .imgWrap {
+          display: flex;
+          width: 100%;
+          height: 50%;
+          gap: 3rem;
+          .textWrap {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+        }
+        para {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: medium;
+          color: silver;
+        }
+        .quantityWrap {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .top {
+            display: flex;
+            width: 50%;
+            height: 80%;
+            gap: 1.5rem;
+            align-items: center;
+            .edit {
+              width: 30px;
+              height: 75%;
+              border: solid silver 1px;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .side {
+            display: flex;
+            width: 50%;
+            height: 80%;
+            gap: 1.5rem;
+            justify-content: flex-end;
+            .wrap {
+              width: 70px;
+              height: 22px;
+              background-color: rgb(223, 255, 192);
+              color: rgb(235, 159, 17);
+              border: none;
+              border-radius: 10px;
+              font-size: small;
+            }
+          }
+        }
+        .btnWrap {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .btnAdd {
+            background-color: rgb(9, 193, 9);
+            color: white;
+            width: 23%;
+            height: 90%;
+            border-radius: 3rem;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+          }
+          .btnRemove {
+            width: 80px;
+            height: 28px;
+            background-color: rgb(223, 255, 192);
+            color: rgb(235, 159, 17);
+            border: none;
+            border-radius: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .menuRight {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 35px;
+      .centerEdit {
+        width: 90%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 10px;
+        box-shadow:
+          rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        .top {
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+          align-items: center;
+          justify-content: center;
+          .wrappers {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            gap: 3.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            color: rgb(61, 60, 60);
+            p {
+              font-size: medium;
+            }
+          }
+          .wrap {
+            width: 76%;
+            display: flex;
+            justify-content: flex-end;
+            color: rgb(61, 60, 60);
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .bottom {
+            width: 93%;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            p {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: small;
+              line-height: 1.5rem;
+              span {
+                color: rgb(237, 170, 47);
+              }
+            }
+          }
+        }
+        .btnEdit {
+          width: 55%;
+          height: 22%;
+          border: none;
+          border-radius: 2rem;
+          background-color: rgb(223, 255, 192);
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: small;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
