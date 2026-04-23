@@ -18,7 +18,7 @@ const Header = () => {
           <section className="wrapper">
             <Button onClick={() => navigate("/")} className="btn" text="Home" />
             <Button
-              onClick={() => navigate("/Stores")}
+              onClick={() => navigate("/stores")}
               className="btn1"
               text="Stores"
             />
@@ -29,17 +29,20 @@ const Header = () => {
           </section>
         </nav>
         <aside className="rightHeader">
-          <AiOutlineShoppingCart
-            className="cartLogo"
-            onClick={() => navigate("/CartPage")}
-          />
+          <div className="cartWrap">
+            <AiOutlineShoppingCart
+              className="cartLogo"
+              onClick={() => navigate("/cartPage")}
+            />
+            <span>1</span>
+          </div>
           <Button
-            onClick={() => navigate("/Register")}
+            onClick={() => navigate("/register")}
             className="btn2"
             text="Register"
           />
           <Button
-            onClick={() => navigate("/LoginPage")}
+            onClick={() => navigate("/loginPage")}
             className="btn4"
             text="Login"
           />

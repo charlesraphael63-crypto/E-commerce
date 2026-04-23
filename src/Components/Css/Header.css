@@ -85,10 +85,29 @@
       gap: 10px;
       justify-content: center;
       align-items: center;
-      .cartLogo {
+      .cartWrap {
         width: 40%;
         height: 40%;
-        color: #15a215;
+        display: flex;
+        align-items: flex-start;
+        gap: none;
+        span {
+          width: 15px;
+          height: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(236, 17, 17);
+          color: white;
+          border-radius: 20px;
+          font-size: x-small;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .cartLogo {
+          width: 50%;
+          height: 100%;
+          color: #15a215;
+        }
       }
       .btn2 {
         width: 50%;

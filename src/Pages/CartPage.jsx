@@ -1,12 +1,29 @@
-import React, { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import { TbCurrencyNaira } from "react-icons/tb";
 import Button from "../Components/Button";
 import "../Components/Css/CartPage.css";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const CartPage = () => {
   const nav = useNavigate();
+  const { id } = useParams();
+  const [imageData, setImageData] = useState([]);
+  const getImageData = async () => {
+    const url = `https://api.escuelajs.co/api/v1/products/${id}`;
+    try {
+      const res = await axios.get(url);
+      setImageData(res?.data);
+      console.log(res.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    getImageData();
+  }, []);
   // const [cardUpdate, setCardUpdate] = useState(false)
 
   return (
@@ -26,11 +43,11 @@ const CartPage = () => {
             <div className="imgWrap">
               <img
                 className="image"
-                src="/src/assets/asset 6 1.png"
-                alt="/src/assets/asset 6 1.png"
+                src={imageData?.images?.[0]}
+                alt={imageData?.title}
               />
               <section className="textWrap">
-                <p>Yam-Grade B</p>
+                <p>${imageData?.price}</p>
                 <span>500kg</span>
               </section>
             </div>

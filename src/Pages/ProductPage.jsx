@@ -37,7 +37,7 @@ const ProductPage = () => {
             <Button
               className="btnProduct"
               text="Add to Cart"
-              onClick={() => nav(`/detailPage/${item.id}`)}
+              onClick={() => nav(`/cartPage/${item.id}`)}
             />
           </div>
         ))}
