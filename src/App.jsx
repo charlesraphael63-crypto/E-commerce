@@ -4,11 +4,11 @@ import LandingPage from "./Pages/LandingPage";
 import Stores from "./Pages/Stores";
 import Register from "./Pages/Register";
 import LoginPage from "./Pages/LoginPage";
-import Header from "./Components/Header";
 import ErrorPage from "./Pages/ErrorPage";
 import DetailPage from "./Pages/DetailPage";
 import CartPage from "./Pages/CartPage";
 import CheckOutPage from "./Pages/CheckOutPage";
+import Header from "./Components/Header";
 // import CartPage from './Pages/CartPage'
 // import CheckOutPage from './Pages/CheckOutPage'
 

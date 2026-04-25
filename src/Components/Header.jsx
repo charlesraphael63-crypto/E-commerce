@@ -32,9 +32,9 @@ const Header = () => {
           <div className="cartWrap">
             <AiOutlineShoppingCart
               className="cartLogo"
-              onClick={() => navigate("/cartPage")}
+              onClick={() => navigate("/cartPage/:id")}
             />
-            <span>1</span>
+            <span>{}</span>
           </div>
           <Button
             onClick={() => navigate("/register")}

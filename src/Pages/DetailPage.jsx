@@ -1,7 +1,6 @@
 import React from "react";
 import "../Components/Css/DetailPage.css";
 import { FaLessThan, FaGreaterThan, FaRegStar } from "react-icons/fa6";
-import {} from "react-icons/fa";
 import Button from "../Components/Button";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
