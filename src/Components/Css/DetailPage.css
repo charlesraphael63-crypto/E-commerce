@@ -110,7 +110,7 @@
         font-size: small;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         h5 {
           color: rgb(122, 121, 121);
           font-size: small;
